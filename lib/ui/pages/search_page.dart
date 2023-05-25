@@ -84,9 +84,9 @@ class _SearchPageState extends State<SearchPage> {
           child: state.when(
             loading: () {
               if (!_isPagination) {
-                return Center(
+                return const Center(
                   child: Row(
-                    children: const [
+                    children: [
                       CircularProgressIndicator(strokeWidth: 2),
                       SizedBox(width: 10),
                       Text('Loading...'),
